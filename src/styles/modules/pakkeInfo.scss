@@ -1,0 +1,55 @@
+@use "../general" as *;
+.pakkeInfo{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 343px;
+    border-radius: $borderRadius;
+    padding: 26px;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    box-shadow: 0px 3px 6px rgba(0,0,0, .16);
+    color: $primaryFontColor;
+    gap: 25px 0px;
+    background: #fff;
+    margin: 15px auto;
+    transition: height .5s ease-in-out;
+    box-sizing: border-box;
+
+    &__Title{
+        font-size: 17px;
+        font-weight: bold;
+        color: $narboksBlue;
+        margin: 1.5em 0;
+    }
+
+    &__status{
+        color: $scondaryFontColor;
+        margin: 1em 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    &__ShowMore{
+        text-align: center;
+        color: $primaryFontColor;
+        grid-column: 1/3;
+        padding: 10px;
+        display: inline-block;
+    }
+
+    &__CarrierLogo{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__more{
+        overflow: hidden;
+        display: none;
+        grid-column: 1/3;
+        transition: height .5s ease-in-out;
+    }
+
+    &--show{
+        display: block;
+    }
+}
