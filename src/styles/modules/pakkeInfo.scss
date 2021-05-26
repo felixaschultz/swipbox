@@ -5,7 +5,7 @@
     border-radius: $borderRadius;
     padding: 26px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 100px;
     box-shadow: 0px 3px 6px rgba(0,0,0, .16);
     color: $primaryFontColor;
     gap: 25px 0px;
