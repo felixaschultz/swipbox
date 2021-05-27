@@ -1,0 +1,26 @@
+@use "color" as *;
+@use "fonts" as *;
+
+
+.Input{
+    width: 100%;
+    border: 3px solid $narboksBlue;
+    border-radius: 10px;
+    padding: 15px 0px;
+
+    &__opt{
+        padding: 18px 20px;
+        border: none;
+        margin-left: -2px;
+        background: $narboksBlue;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    &__numb{
+        padding: 0px 20px;
+        border: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
