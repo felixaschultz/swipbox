@@ -146,7 +146,7 @@ img {
   font-size: 1.375rem;
   color: #12a0d6;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", "sans-serif";
 }
 .popupNotching__list {
   list-style: none;
@@ -186,6 +186,8 @@ img {
   font-size: 1rem;
   padding: 21px 0;
   display: inline-block;
+  font-family: "Arial", "Helvetica", "sans-serif";
+  font-weight: bold;
 }
 .popupNotching__btn--fontColor {
   background-color: #12a0d6;
@@ -383,6 +385,7 @@ img {
   color: #000;
   text-align: center;
   margin: 5px 0px;
+  font-family: "Arial", "Helvetica", "sans-serif";
 }
 .popup-permission__info {
   font-size: 0.875rem;
@@ -407,13 +410,15 @@ img {
   border-bottom-right-radius: 10px;
 }
 .popup-permission__btn {
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: #12a0d6;
   width: 50%;
   text-decoration: none;
   text-align: center;
   display: inline-block;
   padding: 14px 0;
+  font-family: "Arial", "Helvetica", "sans-serif";
+  font-weight: bold;
 }
 .popup-permission__btn.--border-right {
   border-right: solid 1px lightgray;
@@ -484,4 +489,56 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.faceId-permission {
+  position: relative;
+  width: 326px;
+  height: 165px;
+  border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin: 15px auto;
+  font-family: "Calibri", "san-serif";
+}
+.faceId-permission__txt {
+  padding: 26px;
+}
+.faceId-permission__title {
+  font-size: 1.375rem;
+  color: #000;
+  text-align: center;
+  margin: 5px 0px;
+  font-family: "Arial", "Helvetica", "sans-serif";
+}
+.faceId-permission__buttons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 43px;
+  border-top: solid 1px lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.faceId-permission__btn {
+  font-size: 0.875rem;
+  color: #12a0d6;
+  width: 50%;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 14px 0;
+  font-family: "Arial", "Helvetica", "sans-serif";
+  font-weight: bold;
+}
+.faceId-permission__btn.--border-right {
+  border-right: solid 1px lightgray;
 }

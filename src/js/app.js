@@ -10,7 +10,7 @@ for(let i=0; i<showMore.length; i++){
         if(packageInfo[i].classList.contains("pakkeInfo--show")){
             showMore[i].innerText = "Luk detaljer";
         }else{
-            showMore[i].innerText = "detaljer";
+            showMore[i].innerText = "Detaljer";
         }
     })
 }
