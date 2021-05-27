@@ -17,7 +17,13 @@
     &--near{
         background: $swipboxOrange;
     }
+
+    &--fullwidth{
+        width: 100%;
+        margin-top: 15px;
+    }
 }
+
 
 .round-btn {
     height: 179px;
