@@ -1,0 +1,36 @@
+@use "../general" as *;
+.support{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr 50px;
+    gap: 20px;
+    margin: 30px auto;
+
+    &__image{
+        width: 100%;
+        grid-row: 1/3;
+        object-fit: scale-down;
+
+        &--naerboks{
+            width: 50%;
+            margin: auto;
+        }
+    }
+
+    &__btn{
+        grid-column: 2/3;
+        width: 70%;
+        margin: auto;
+        background-color: $swipboxOrange;
+    }
+
+    &__headline{
+        font-family: $fontFamily;
+        font-weight: 200;
+        font-size: 22px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
