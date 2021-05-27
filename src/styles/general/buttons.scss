@@ -1,5 +1,6 @@
 @use "color" as *;
 @use "gStyle" as *;
+@use "fonts" as *;
 
 .btn{
     border: none;
@@ -35,5 +36,17 @@
     border-radius: 50%;
     text-align: center;
     box-shadow: 0px 3px 6px rgba(0,0,0, .16);
+}
+
+.btn-bg-less {
+    width: 145px;
+    height: 44px;
+    border: solid 2px $swipboxDarkBlue;
+    border-radius: $borderRadius;
+    background: transparent;
+    font-size: 0.8125rem;
+    font-family: $fontSecondary;
+    font-weight: bold;
+    color: $swipboxDarkBlue;
 }
 
