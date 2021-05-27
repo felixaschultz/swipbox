@@ -254,6 +254,64 @@ img {
   width: 300px;
 }
 
+.pinkode {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+.pin {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border: 2px solid #12a0d6;
+  border-radius: 10px;
+}
+
+::-webkit-input-placeholder {
+  color: #12a0d6;
+}
+
+::-moz-placeholder {
+  color: #12a0d6;
+}
+
+:-ms-input-placeholder {
+  color: #12a0d6;
+}
+
+::-ms-input-placeholder {
+  color: #12a0d6;
+}
+
+::placeholder {
+  color: #12a0d6;
+}
+
+.pin::-webkit-input-placeholder {
+  font-size: 30px;
+}
+
+.pin::-moz-placeholder {
+  font-size: 30px;
+}
+
+.pin:-ms-input-placeholder {
+  font-size: 30px;
+}
+
+.pin::-ms-input-placeholder {
+  font-size: 30px;
+}
+
+.pin::placeholder {
+  font-size: 30px;
+}
+
 .fragtInfo {
   width: 343px;
   height: 70px;

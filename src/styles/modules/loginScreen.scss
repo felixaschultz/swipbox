@@ -3,3 +3,27 @@
 .loginScreen{
     width: 300px;
 }
+
+.pinkode{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+
+.pin{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border: 2px solid $narboksBlue;
+    border-radius: 10px;
+}
+
+::placeholder{
+    color: $placeholderBlue;
+}
+
+.pin::placeholder{
+    font-size: 30px;
+}
