@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
 Eric Meyer's CSS Reset
 http://meyerweb.com/eric/tools/css/reset/
@@ -92,6 +93,19 @@ img {
   margin-top: 15px;
 }
 
+.round-btn {
+  height: 179px;
+  width: 179px;
+  background: #12a0d6;
+  color: #fff;
+  font-size: 1.5rem;
+  border: solid 0px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
 .Input {
   width: 100%;
   border: 3px solid #12a0d6;
@@ -111,6 +125,69 @@ img {
   border: none;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.popupNotching {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 325px;
+  height: 271px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin: 15px auto;
+}
+.popupNotching__text {
+  padding: 26px;
+}
+.popupNotching__title {
+  margin: 15px 0px;
+  font-size: 1.375rem;
+  color: #12a0d6;
+  text-align: center;
+}
+.popupNotching__list {
+  list-style: none;
+  padding-top: 10px;
+}
+.popupNotching__list-txt::before {
+  content: "• ";
+  color: #0fbe00;
+}
+.popupNotching__list-txt {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #848484;
+}
+.popupNotching__buttons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 58px;
+  border-top: solid 1px lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.popupNotching__btn {
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  color: #12a0d6;
+  font-size: 1rem;
+  padding: 21px 0;
+  display: inline-block;
+}
+.popupNotching__btn--fontColor {
+  background-color: #12a0d6;
+  color: #fff;
 }
 
 .pakkeInfo {
@@ -175,4 +252,54 @@ img {
 
 .loginScreen {
   width: 300px;
+}
+
+.fragtInfo {
+  width: 343px;
+  height: 70px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 63px 1fr;
+  grid-template-columns: 63px 1fr;
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  margin: auto;
+}
+.fragtInfo__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.fragtInfo__text {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  text-transform: uppercase;
+}
+.fragtInfo__heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #12a0d6;
+  text-align: center;
+}
+.fragtInfo__description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ea5b0c;
+  text-align: center;
 }

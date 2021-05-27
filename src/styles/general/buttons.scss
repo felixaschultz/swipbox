@@ -23,3 +23,17 @@
         margin-top: 15px;
     }
 }
+
+
+.round-btn {
+    height: 179px;
+    width: 179px;
+    background: $narboksBlue;
+    color: #fff;
+    font-size: 1.5rem;
+    border: solid 0px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0px 3px 6px rgba(0,0,0, .16);
+}
+
