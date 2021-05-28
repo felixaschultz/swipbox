@@ -5,9 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nærboks</title>
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="../src/style.css">
+    <script src="../src/js/app.js" defer></script>
 </head>
 <body>
-    
+    <article class="loadingScreen">
+        <img src="../src/assets/narboks__white.png" alt="" class="loadingScreen__logo">
+        <span class="loadingScreen__loader"></span>
+    </article>
+    <article class="login">
+        <img src="../src/assets/narboks.png" alt="" class="login__logo">
+        <section class="login__container">
+            <article class="loginScreen --absolute" >
+                <p class="loginScreen__info">Indtast dit telefonnummer
+                    så henter vi dine pakke oplysninger</p>
+                <label class="Input" for="tel">
+                    <select class="Input__opt" name="" id="">
+                        <option value="45">+45</option>
+                        <option value="49">+49</option>
+                    </select>
+                    <input id="tel" class="Input__numb" type="tel" placeholder="29 88 02 24">
+                </label>
+                <button class="btn btn--primary btn--fullwidth --login" >
+                    Næste
+                </button>
+            </article>
+            <article class="loginScreen --absolute --next" >
+                <p class="loginScreen__info">Vi har sendt en bekræftelseskode
+                    til 12 34 56 78 som du skal indtaste
+                    på næste side.</p>
+                <button class="btn btn--primary btn--fullwidth --login" >
+                    Næste
+                </button>
+            </article>
+            <article class="loginScreen bekræftelse --absolute --next">
+                <p class="bekræftelse__text">Indtast din <span class="bekræftelse--underline">bekræftelseskode</span> som står i SMS’en fra Nærboks </p>
+                <input class="bekræftelse__input" type="text" placeholder="Indtast koden">
+                <button class="btn btn--primary btn--fullwidth --confirm" >
+                    Bekræft
+                </button>
+            </article>
+        </section>
+    </article>
+    <article class="homescreen">
+        <article class="pakkeInfo">
+            <section class="pakkeInfo__text">
+                <h2 class="pakkeInfo__Title">Nærboks Ellegårdvej<br>Swipbox</h2>
+                <p class="pakkeInfo__status">Afhentingsklar (2 Pakker)</p>
+                <p>Afhent inden: 7 dage</p>
+            </section>
+            <img class="pakkeInfo__CarrierLogo" src="https://media-exp1.licdn.com/dms/image/C560BAQE_SCccUYpHcg/company-logo_200_200/0/1566393919203?e=2159024400&v=beta&t=65qXSwt5d2b0HgJHoM9RFCQ4ynLadwfGb7ASqg4wDlU" alt="">
+            <!-- Button -->
+            <button class="btn btn--primary --navigation" data-address="Ellegårdvej 7, 6400 Sønderborg">
+                Vis vej
+            </button>
+            <!-- End Button -->
+            <!-- More info -->
+            <section class="pakkeInfo__more">
+                <p>Pakke nr.: 0123456789876543210 <br>
+                    <br>
+                    Adresse:<br>
+                    Ellegårdvej 7,<br>
+                    6400 Sønderborg
+                </p>
+            </section>
+            <!-- End of More info -->
+            <a href="#" class="pakkeInfo__ShowMore">Detaljer</a>
+        </article>
+    </article>
 </body>
 </html>
