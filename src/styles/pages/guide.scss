@@ -1,0 +1,91 @@
+@use "../general" as *;
+
+.guide {
+  height: 100%;
+  width: 100%;
+  background: $narboksBlue;
+}
+
+.guide-steps {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    width: 85%;
+    height: 90px;
+    margin: auto;
+  }
+  &__skip {
+    float: right;
+    font-size: 1.125rem;
+    font-family: $fontFamily;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 14px;
+  }
+  &__back-btn {
+    width: 80%;
+    background-color: transparent;
+  }
+  &__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: $fontSecondary;
+    text-align: center;
+    color: #fff;
+    margin: 35px 0px 20px 0px;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__instructions {
+    font-size: 1.125rem;
+    font-family: $fontFamily;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 50px 0;
+  }
+  &__continue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  &__btn {
+    border: 0px solid;
+    border-radius: $borderRadius;
+    background: #fff;
+    color: $narboksBlue;
+    font-size: 1.25rem;
+    font-family: $fontSecondary;
+    font-weight: bold;
+    width: 70vw;
+    height: 45px;
+  }
+  &__page-number {
+    display: flex;
+    justify-content: center;
+  }
+  &__radio {
+    display: none;
+  }
+  &__radio-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  &__manual-btn {
+    border: 2px solid #ffffff;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+    margin: 0 10px;
+  }
+  &__manual-btn.--color {
+    background: $swipboxOrange;
+  }
+}
