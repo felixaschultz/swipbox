@@ -1,0 +1,25 @@
+@use "../general" as *;
+.login{
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &__logo{
+        width: 80%;
+        margin:0px auto;
+    }
+}
+
+.loginScreen{
+    margin: 0px auto;
+
+    &__info{
+        text-align: center;
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+}
