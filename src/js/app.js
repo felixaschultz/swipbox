@@ -1,6 +1,7 @@
 const showMore = document.querySelectorAll(".pakkeInfo__ShowMore");
 const packageInfo = document.querySelectorAll(".pakkeInfo__more");
 const navigation = document.querySelectorAll(".--navigation");
+const loadingScreen = document.querySelector(".loadingScreen");
 
 for(let i=0; i<showMore.length; i++){
     showMore[i].addEventListener("click", function(e){
@@ -24,3 +25,7 @@ navigation.forEach((navi) => {
         window.open(navLink, '_blank');
     })
 })
+
+setTimeout(function(){
+    loadingScreen.style.opacity = "0";
+}, 3000);
