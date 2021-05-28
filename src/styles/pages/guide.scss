@@ -78,12 +78,12 @@
     margin-bottom: 50px;
   }
   &__manual-btn {
-    border: 2px solid #ffffff;
-    padding: 7px;
+    background: #fff;
+    padding: 8px;
     border-radius: 50%;
     cursor: pointer;
     transition: 1s;
-    margin: 0 10px;
+    margin: 0 11px;
   }
   &__manual-btn.--color {
     background: $swipboxOrange;
