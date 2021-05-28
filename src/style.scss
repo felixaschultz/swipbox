@@ -1,3 +1,22 @@
 @use "styles/general" as *;
 @use "styles/modules" as *;
 @use "styles/pages" as *;
+
+.content{
+    padding: 15px;
+    color: $primaryFontColor;
+}
+
+.header{
+    width: 100%;
+    height: 103px;
+    background: $narboksBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title{
+        font-size: 25px;
+        color: #fff;
+    }
+}
