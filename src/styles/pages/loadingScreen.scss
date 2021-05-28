@@ -18,6 +18,10 @@
     transition: opacity .5s ease-in-out;
     pointer-events: none;
 
+    &--bold{
+        font-weight: bold;
+    }
+
     &__loader{
         width: 100px;
         height: 100px;

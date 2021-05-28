@@ -1,5 +1,6 @@
 const showMore = document.querySelectorAll(".pakkeInfo__ShowMore");
 const packageInfo = document.querySelectorAll(".pakkeInfo__more");
+const package = document.querySelectorAll(".pakkeInfo");
 const navigation = document.querySelectorAll(".--navigation");
 const loadingScreen = document.querySelector(".loadingScreen");
 const loginScreens = document.querySelectorAll(".loginScreen");
@@ -10,6 +11,7 @@ const confirmBtn = document.querySelector(".--confirm");
 for(let i=0; i<showMore.length; i++){
     showMore[i].addEventListener("click", function(e){
         e.preventDefault();
+        package[i].classList.toggle("pakkeInfo--show");
         packageInfo[i].classList.toggle("pakkeInfo--show");
         
         if(packageInfo[i].classList.contains("pakkeInfo--show")){
