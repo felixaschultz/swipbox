@@ -8,8 +8,32 @@
     background-position: center;
     background-blend-mode: overlay;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
-    transition: all .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    pointer-events: none;
+
+    &__loader{
+        width: 100px;
+        height: 100px;
+        border: 10px solid $loaderBG;
+        border-top: 10px solid $loaderSpin; 
+        border-radius: 50%;
+        position: relative;
+        -webkit-animation:spin 2s linear infinite;
+        -moz-animation:spin 2s linear infinite;
+        animation:spin 2s linear infinite;
+    }
+
+    &__logo{
+        width: 80%;
+    }
 }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
