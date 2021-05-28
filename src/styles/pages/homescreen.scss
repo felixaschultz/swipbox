@@ -1,0 +1,13 @@
+@use "../general" as *;
+.homescreen{
+    background-color: $narboksBlue;
+    padding: 80px 20px;
+    width: 100vw;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.pakkeInfo{
+    margin: 0;
+    width: 100%;
+}
