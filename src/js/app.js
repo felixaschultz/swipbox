@@ -7,6 +7,13 @@ const loginScreens = document.querySelectorAll(".loginScreen");
 const loginScreen = document.querySelector(".login");
 const btn = document.querySelectorAll(".--login");
 const confirmBtn = document.querySelector(".--confirm");
+const menuBtn = document.querySelector(".header__menu");
+const nav = document.querySelector(".header__navigation");
+
+menuBtn.addEventListener("click", function(){
+    this.classList.toggle("header__menu--open");
+    nav.classList.toggle("header__navigation--open");
+});
 
 for(let i=0; i<showMore.length; i++){
     showMore[i].addEventListener("click", function(e){
@@ -46,3 +53,5 @@ for(let o=0; o<btn.length; o++){
 confirmBtn.addEventListener("click", function(){
     loginScreen.style.top = "-100%";
 });
+
+

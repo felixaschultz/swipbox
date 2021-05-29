@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Support</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../js/app.js" defer></script>
+  </head>
+  <body>
     <header class="header">
-        <h2 class="header__title">Kundeservice</h2>
+      <aside class="header__menu">
+        <span class="header__menu-line"></span>
+        <span class="header__menu-line"></span>
+        <span class="header__menu-line"></span>
+      </aside>
+      <h2 class="header__title">Kundeservice</h2>
+      <nav class="header__navigation">
+        <header class="header__navigation-title">
+          <h2 class="header__title">Menu</h2>
+        </header>
+        <a class="header__navigation-item" href="">Pakker</a>
+        <a class="header__navigation-item" href="">Aflever pakker</a>
+        <a class="header__navigation-item" href="">Kundeservice</a>
+        <a class="header__navigation-item" href="">Nærboks guide</a>
+        <a class="header__navigation-item" href="">Skift telefonnummer</a>
+        <a class="header__navigation-item" href="">Log af</a>
+      </nav>
     </header>
     <main class="content">
-        <article class="support_container">
-            <p class="support_container__information">Vi er altid klar til at hjælpe
-                uanset om du har spørgsmål omkring
-                Nærboksen eller hvis der er noget teknisk der
-                driller.</p>
-            <article class="support">
-                <img class="support__image support__image--naerboks" src="../assets/Nærboks_3D.svg" alt="" srcset="">
-                <h2 class="support__headline">Hjælp til Nærboks</h2>
-                <button class="btn btn--primary support__btn">
-                    Ring til support
-                </button>
-            </article>
-            <article class="support">
-                <img class="support__image" src="../assets/Neutral Box.svg" alt="" srcset="">
-                <h2 class="support__headline">Hjælp til Pakker</h2>
-                <button class="btn btn--primary support__btn">
-                    Ring til support
-                </button>
-            </article>
+      <article class="support_container">
+        <p class="support_container__information">
+          Vi er altid klar til at hjælpe uanset om du har spørgsmål omkring Nærboksen eller hvis der
+          er noget teknisk der driller.
+        </p>
+        <article class="support">
+          <img
+            class="support__image support__image--naerboks"
+            src="../assets/Nærboks_3D.svg"
+            alt=""
+            srcset=""
+          />
+          <h2 class="support__headline">Hjælp til Nærboks</h2>
+          <button class="btn btn--primary support__btn">Ring til support</button>
         </article>
+        <article class="support">
+          <img class="support__image" src="../assets/Neutral Box.svg" alt="" srcset="" />
+          <h2 class="support__headline">Hjælp til Pakker</h2>
+          <button class="btn btn--primary support__btn">Support</button>
+        </article>
+      </article>
     </main>
-</body>
+  </body>
 </html>
