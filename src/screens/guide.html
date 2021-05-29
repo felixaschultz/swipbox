@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guide</title>
     <link rel="stylesheet" href="../style.css" />
-    <script src="../js/app.js"></script>
   </head>
   <body>
     <article class="guide">
@@ -160,5 +159,21 @@
         </section>
       </section>
     </article>
+    <script>
+        const skipGuide = document.querySelector(".guide-steps__skip");
+        const guideSlides = document.querySelectorAll(".guide-steps");
+        const nextBtn = document.querySelectorAll(".guide-steps__btn");
+
+        for(let i=0; i<guideSlides.length; i++){
+            nextBtn[i].addEventListener("click", function(e){
+
+                let parent = e.target.parentElement.parentElement;
+                let next = parent.nextElementSibling;
+
+                parent.style.transform = "translateX(-"+parent.clientWidth+"px)";
+                next.style.transform = "translateX(-"+next.clientWidth+"px)";
+            });
+        }
+    </script>
   </body>
 </html>

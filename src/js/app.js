@@ -10,6 +10,7 @@ const confirmBtn = document.querySelector(".--confirm");
 const menuBtn = document.querySelector(".header__menu");
 const nav = document.querySelector(".header__navigation");
 
+
 menuBtn.addEventListener("click", function(){
     this.classList.toggle("header__menu--open");
     nav.classList.toggle("header__navigation--open");
@@ -54,4 +55,4 @@ confirmBtn.addEventListener("click", function(){
     loginScreen.style.top = "-100%";
 });
 
-
+/* transform: translateX(-100%); */
