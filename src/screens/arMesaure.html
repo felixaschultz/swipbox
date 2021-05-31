@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Åben lågen</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../style.css">
+    <script src="../js/app.js" defer></script>
 </head>
 <body>
     <header class="header">
         <aside class="header__menu">
             <img class="header__menu-back-btn" src="../assets/back-arrow.png" alt="" />
         </aside>
-        <h2 class="header__title">Pakke fra Power</h2>
+        <h2 class="header__title">Augmented Reality</h2>
         <nav class="header__navigation">
           <header class="header__navigation-title">
             <h2 class="header__title">Menu</h2>
@@ -25,16 +26,9 @@
           <a class="header__navigation-item" href="">Log af</a>
         </nav>
     </header>
-      <main class="openstage">
-    <h2>Forbundet til Nærboks <br>13487, udenfor</h2>
-    <button class="round-btn open">
-        Åben lågen
-    </button>
-    <script>
-        document.querySelector(".open").addEventListener("click", function(){
-          window.location.href = "arParcelDoor.html";
-        })
-    </script>
-</main>
+    <article class="arcontainer">
+        <img src="../assets/74575ACB-1C79-47F1-B513-3CA19D60C4D5_1_105_c.jpeg" alt="" srcset="">
+        <button class="arcontainer__icon"><svg xmlns="http://www.w3.org/2000/svg" height="54px" viewBox="0 0 24 24" width="54px" fill="#ffff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M14.12 4l1.83 2H20v12H4V6h4.05l1.83-2h4.24M15 2H9L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm-3 7c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"/></svg></button>
+    </article>
 </body>
 </html>
