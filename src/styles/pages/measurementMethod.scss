@@ -1,0 +1,53 @@
+@use "../general/" as *;
+
+.measurement-method {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  width: 85%;
+  margin: auto;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+  &__heading--wrapper {
+    width: 85%;
+    margin: auto;
+  }
+  &__heading {
+    font-size: 1.375rem;
+    font-family: $fontSecondary;
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 50px 0px;
+  }
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 103px);
+    background-color: $narboksBlue;
+    margin-top: -2px;
+  }
+  &__title {
+    font-size: 1.375rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: $fontSecondary;
+    text-align: center;
+  }
+  &__btn {
+    width: 100%;
+    height: 40px;
+    border-radius: $borderRadius;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: $fontSecondary;
+    color: $narboksBlue;
+    background: #fff;
+    border: none;
+  }
+}
