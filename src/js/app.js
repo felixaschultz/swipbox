@@ -61,3 +61,9 @@ confirmBtn.addEventListener("click", function(){
 });
 
 /* transform: translateX(-100%); */
+
+if(document.referrer.indexOf("arParcelDoor.html") != -1 || document.referrer.indexOf("guide.html") != -1){
+    console.log("Hej");
+    loginScreen.style.display = "none";
+    loadingScreen.style.opacity = "0";
+}
