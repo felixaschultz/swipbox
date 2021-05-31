@@ -7,4 +7,9 @@
     align-items: center;
     padding: 15px;
     height: calc(100vh - 103px);
+
+    &__title{
+        font-size: 25px;
+        text-align: center;
+    }
 }
