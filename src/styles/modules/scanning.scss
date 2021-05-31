@@ -1,0 +1,10 @@
+@use "../general" as *;
+
+.scanning{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    height: 50vh;
+}
