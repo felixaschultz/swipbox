@@ -1,0 +1,15 @@
+@use "../general" as *;
+
+.scanning{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    height: calc(100vh - 103px);
+
+    &__title{
+        font-size: 25px;
+        text-align: center;
+    }
+}

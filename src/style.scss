@@ -76,3 +76,20 @@
     }
   }
 }
+
+.fragtContainer{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 140px;
+
+    &__headline{
+        font-size: 18px;
+        color: $narboksBlue;
+    }
+
+    &__description{
+
+    }
+}
