@@ -27,9 +27,14 @@
       </header>
       <main class="openstage">
     <h2>Forbundet til Nærboks <br>13487, udenfor</h2>
-    <button class="round-btn">
+    <button class="round-btn open">
         Åben lågen
     </button>
+    <script>
+        document.querySelector(".open").addEventListener("click", function(){
+          window.location.href = "arParcelDoor.html";
+        })
+    </script>
 </main>
 </body>
 </html>
