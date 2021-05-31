@@ -33,11 +33,16 @@ for(let i=0; i<showMore.length; i++){
 navigation.forEach((navi) => {
     navi.addEventListener("click", (e)=>{
         e.preventDefault();
-        const add = navi.getAttribute("data-address");
-        const navLink = `https://www.google.com/maps/dir/?api=1&origin=Current Location&destination=${add}`;
-
-        window.open(navLink, '_blank');
-    })
+        let navLink = "";
+        if(navi.getAttribute("data-address")){
+            const add = navi.getAttribute("data-address");
+            navLink = `https://www.google.com/maps/dir/?api=1&origin=Current Location&destination=${add}`;
+            window.open(navLink, '_blank');
+        }else{
+            navLink = navi.getAttribute("data-nextScreen");
+            window.location.href = navLink;
+        }
+    });
 })
 
 setTimeout(function(){
