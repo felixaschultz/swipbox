@@ -135,7 +135,7 @@ img {
   cursor: pointer;
 }
 
-body {
+.openstage {
   display: flex;
   flex-direction: column;
   justify-content: center;
