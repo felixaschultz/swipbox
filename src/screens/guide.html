@@ -122,7 +122,7 @@
       <section class="guide-steps">
         <header class="guide-steps__header">
           <a href="#">
-            <p class="guide-steps__skip">Spring over</p>
+            <!-- <p class="guide-steps__skip">Spring over</p> -->
           </a>
           <a href="#">
             <img
@@ -145,7 +145,7 @@
           </p>
         </section>
         <section class="guide-steps__continue">
-          <button class="guide-steps__btn">Næste</button>
+          <button class="guide-steps__btn">Kom i gang</button>
           <input class="guide-steps__radio" type="radio" name="radio-btn" id="radio1" />
           <input class="guide-steps__radio" type="radio" name="radio-btn" id="radio2" />
           <input class="guide-steps__radio" type="radio" name="radio-btn" id="radio3" />
@@ -179,9 +179,11 @@
                 }
             });
 
-            skipGuide[i].addEventListener("click", function(){
-                window.location.href = "/build/index.html";
-            })
+            if(skipGuide[i] !== undefined){
+                skipGuide[i].addEventListener("click", function(){
+                    window.location.href = "/build/index.html";
+                })
+            }
         }
 
         for(let j=0; j<back.length; j++){
