@@ -160,9 +160,10 @@
       </section>
     </article>
     <script>
-        const skipGuide = document.querySelector(".guide-steps__skip");
+        const skipGuide = document.querySelectorAll(".guide-steps__skip");
         const guideSlides = document.querySelectorAll(".guide-steps");
         const nextBtn = document.querySelectorAll(".guide-steps__btn");
+        const back = document.querySelectorAll(".guide-steps__back-btn");
 
         for(let i=0; i<guideSlides.length; i++){
             nextBtn[i].addEventListener("click", function(e){
@@ -177,7 +178,21 @@
                     guideSlides[i+1].style.left = "0";
                 }
             });
+
+            skipGuide[i].addEventListener("click", function(){
+                window.location.href = "/build/index.html";
+            })
         }
+
+        for(let j=0; j<back.length; j++){
+            back[j].addEventListener("click", function(){
+                guideSlides[j+1].style.display = "none";
+                guideSlides[j].style.display = "block";
+
+                guideSlides[j].style.left = "0";
+            });
+        }
+
     </script>
   </body>
 </html>
