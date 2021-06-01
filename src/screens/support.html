@@ -47,14 +47,14 @@
         <section class="support">
           <img class="support__image" src="../assets/Neutral Box.svg" alt="" srcset="" />
           <h2 class="support__headline">Hjælp til Pakker</h2>
-          <button class="btn btn--primary support__btn">Support</button>
+          <button class="btn btn--primary support__btn --showSupport">Support</button>
         </section>
-        <article style="position: absolute;
+        <article class="supportOverview" style="position: absolute;
         top: 0;
         left: -100%;
         background: #fff;
         width: 100%;
-        z-index: 1;">
+        z-index: 1000;">
             <header class="header">
                 <aside class="header__menu">
                   <img class="header__menu-back-btn" src="../assets/back-arrow.png" alt="" />
@@ -113,5 +113,19 @@
         </article>
       </article>
     </main>
+    <script>
+        const supportBtn = document.querySelector(".--showSupport");
+        const supportOverview = document.querySelector(".supportOverview");
+        const back = document.querySelector(".header__menu-back-btn");
+
+        supportBtn.addEventListener("click", function(){
+            supportOverview.style.left = "0";
+        });
+
+        back.addEventListener("click", function(){
+            supportOverview.style.left = "-100%";
+        })
+
+    </script>
   </body>
 </html>
